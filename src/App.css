@@ -1,0 +1,37 @@
+
+/* edit video player */
+.video-section .video-react-button[aria-live="polite"] {
+  background: white !important;
+  width: 125px !important;
+  height: 125px !important;
+  border-radius: 99px !important;
+  left: 50% !important;
+  top: 50% !important;
+  transform: translate(-50%, -50%) !important;
+}
+
+.video-section .video-react-button[aria-live="polite"]::before {
+  color: #000 !important;
+  font-size: 90px;
+  top: 35px !important;
+}
+
+@media screen and (max-width: 767px) {
+  .video-section .video-react-button[aria-live="polite"] {
+    width: 75px !important;
+    height: 75px !important;
+  }
+
+  .video-section .video-react-button[aria-live="polite"]::before {
+    font-size: 50px;
+    top: 15px !important;
+  }
+}
+
+
+
+
+/* swiper disable button style */
+.slider-section .flicking-arrow-disabled {
+  opacity: 0.2 !important;
+}

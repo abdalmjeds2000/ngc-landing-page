@@ -1,0 +1,50 @@
+{
+  "HeaderSection": {
+    "MenuItems": [
+      {
+        "Title": "الرئيسية",
+        "Link": "#"
+      },{
+        "Title": "من نحن",
+        "Link": "#who-we-are"
+      },{
+        "Title": "البعد الاستراتيجي",
+        "Link": "#strategic-dimension"
+      },{
+        "Title": "أهدافنا",
+        "Link": "#our-goals"
+      }
+    ]
+  },
+  "HeroText": {
+    "MainHeader": "بُعد استراتيجي لربط قـارات العالم الثـلاث",
+    "SubHeader": "تلبيــة احتياجــات المســتقبل للمملكــة العربية السعودية للحفـاظ علـى الأمـن المائـي والحـد مـن زراعـة الأعـلاف",
+    "Button": "إعرف أكثر"
+  },
+
+  "SocialMediaUrls": {
+    "Twitter": "https://x.com",
+    "Instagram": "https://www.instagram.com",
+    "LinkedIn": "https://www.linkedin.com"
+  },
+  "VideoUrl": "https://media.w3.org/2010/05/sintel/trailer_hd.mp4",
+  "CarouselCards": [
+    {
+      "Title": "412",
+      "SubTitle": "مليون ريال",
+      "Description": "التكلفـة الإجماليـة لهذه الشـراكة في مرحلتها الأولى بحوالي"
+    },{
+      "Title": "ينبع",
+      "SubTitle": "التجاري",
+      "Description": "تقع محطـة مناولة الحبـوب في مينـاء"
+    },{
+      "Title": "3 مليون",
+      "SubTitle": "طن سنوياً",
+      "Description": "تبلـغ الطاقـة الاسـتيعابية للمحطـــة في بدايتهـــــا"
+    },{
+      "Title": "متر مربع",
+      "SubTitle": "313,000",
+      "Description": "تقدر مساحة محطة مناولة الحبوب بحوالي"
+    }
+  ]
+}
