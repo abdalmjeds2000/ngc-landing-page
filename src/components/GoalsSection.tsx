@@ -1,4 +1,4 @@
-import React from 'react';
+// import React from 'react';
 import AnimationOnView from './AnimationOnView';
 import background_card_image_1 from '../assets/ngc/goal_1.png';
 import background_card_image_2 from '../assets/ngc/goal_2.png';

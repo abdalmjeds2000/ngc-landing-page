@@ -1,4 +1,4 @@
-import React from 'react';
+// import React from 'react';
 import Hero from './components/Hero.tsx';
 import './App.css';
 import Header from './components/Header.tsx';

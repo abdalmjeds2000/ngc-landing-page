@@ -1,5 +1,5 @@
-import React from 'react'
-import image from '../assets/ngc/hero background.png'
+// import React from 'react';
+import image from '../assets/ngc/hero background.png';
 import { HeroText } from "../content.json";
 import { motion } from "framer-motion";
 import { FiArrowDown, FiArrowLeft } from "react-icons/fi";

@@ -5,11 +5,9 @@ import "video-react/dist/video-react.css";
 import poster from "../assets/ngc/video poster.jpg";
 import AnimationOnView from "./AnimationOnView";
 
-interface VideoPlayerProps {
-  // Define any additional props here if needed
-}
+interface VideoPlayerProps {}
 
-const VideoSection: React.FC<VideoPlayerProps> = (props) => {
+const VideoSection: React.FC<VideoPlayerProps> = () => {
   return (
     <AnimationOnView>
       <div className="container max-w-6xl mx-auto px-2 mb-24">

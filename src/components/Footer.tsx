@@ -1,4 +1,4 @@
-import React from 'react';
+// import React from 'react';
 import logo from '../assets/ngc/logo.png';
 import { HeaderSection, SocialMediaUrls } from "../content.json";
 import { FiArrowLeft } from "react-icons/fi";
