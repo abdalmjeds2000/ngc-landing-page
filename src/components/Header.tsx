@@ -17,9 +17,9 @@ type OverlayMobileMenuPropsTypes = {
 const OverlayMobileMenu = ({ isOpen, close }: OverlayMobileMenuPropsTypes) => {
   return ReactDOM.createPortal(
     <div className={cn('fixed inset-0 bg-white z-50 block md:!hidden text-ngc_dark', { "hidden": !isOpen })}>
-      <div className='px-2 h-16 flex items-center justify-between border-b'>
+      <div className='px-2 h-20 flex items-center justify-between border-b'>
         <div>
-          <img src={logo} alt='logo' className='h-11' />
+          <img src={logo} alt='logo' className='h-12' />
         </div>
         <button className='p-2 bg-gray-100 hover:bg-gray-200 rounded-full transition-all' onClick={close}>
           <RiCloseFill />
@@ -48,11 +48,11 @@ const Header = () => {
   return ReactDOM.createPortal(
     <motion.div 
       initial={{ y: "-8rem", opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ duration: 0.5 }}
-      className='text-ngc_white absolute top-0 w-full h-16 z-40'
+      className='text-ngc_white absolute top-0 w-full h-20 z-40'
     >
       <div className='container mx-auto px-2 h-full flex items-center justify-between'>
         <div>
-          <img src={logo_light} alt='logo' className='h-11' />
+          <img src={logo_light} alt='logo' className='h-12' />
         </div>
         <div className='max-md:hidden'>
           <div className='flex items-center gap-3'>

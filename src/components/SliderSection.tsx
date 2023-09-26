@@ -22,8 +22,8 @@ const Card: React.FC<CardProps> = (props: CardProps) => {
         alt='card_shape'
         className='absolute top-0 left-0 w-2/3 opacity-50 h-auto -scale-x-100'
       />
-      <div className='h-full relative flex flex-col justify-around'>
-        <p className='text-v text-ngc_secondary max-w-[14rem]'>{props.description}</p>
+      <div className='h-full relative flex flex-col justify-around max-md:text-center'>
+        <p className='text-ngc_secondary md:max-w-[14rem]'>{props.description}</p>
         <div>
           <h1 className='text-5xl font-semibold text-ngc_orange mb-2'>{props.title}</h1>
           <p className='text-md text-ngc_secondary'>{props.subTitle}</p>
