@@ -1,7 +1,7 @@
 import React from 'react';
 import AnimationOnView from './AnimationOnView';
 import Flicking, { ViewportSlot } from "@egjs/react-flicking";
-import { Arrow } from "@egjs/flicking-plugins";
+import { Arrow, AutoPlay } from "@egjs/flicking-plugins";
 import "@egjs/react-flicking/dist/flicking.css";
 import "@egjs/react-flicking/dist/flicking-inline.css";
 import "@egjs/flicking-plugins/dist/arrow.css";
@@ -34,7 +34,8 @@ const Card: React.FC<CardProps> = (props: CardProps) => {
 }
 
 const SliderSection = () => {
-  
+  const plugins = [new Arrow(), new AutoPlay({ duration: 1500, direction: "PREV", stopOnHover: true, animationDuration: 1500 })];
+
   return (
     <AnimationOnView>
       <div className="container max-w-6xl mx-auto px-2 mb-24">
@@ -43,7 +44,7 @@ const SliderSection = () => {
         </h1>
 
         <div className="slider-section" style={{direction: "ltr"}}>
-          <Flicking moveType="snap" plugins={[new Arrow()]} align="center" defaultIndex={2}>
+          <Flicking circular={true} moveType="snap" plugins={plugins} align="center" >
             {
               CarouselCards.map((card, index) => (
                 <div key={index} className='w-full md:w-1/2 lg:w-2/6 h-64 mr-0 md:mr-4 lg:mr-6 rounded-2xl overflow-hidden'>
@@ -56,8 +57,8 @@ const SliderSection = () => {
               ))
             }
             <ViewportSlot>
-              <span className="flicking-arrow-prev before:bg-ngc_orange after:bg-ngc_orange"></span>
-              <span className="flicking-arrow-next before:bg-ngc_orange after:bg-ngc_orange"></span>
+              <span className="flicking-arrow-prev is-circle !bg-ngc_orange"></span>
+              <span className="flicking-arrow-next is-circle !bg-ngc_orange"></span>
             </ViewportSlot>
           </Flicking>
         </div>
