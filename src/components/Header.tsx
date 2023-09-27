@@ -80,13 +80,13 @@ const Header = () => {
         </div>
         <div className='max-md:hidden'>
           <div className='flex items-center gap-2'>
-            <a href={SocialMediaUrls.Twitter} target='_blank' rel="noopener" className='text-sm relative hover:-top-0.5 border-ngc_white border-2 w-6 h-6 rounded-md flex justify-center items-center'>
+            <a href={SocialMediaUrls.Twitter || undefined} target='_blank' rel="noopener" className='text-sm relative hover:-top-0.5 border-ngc_white border-2 w-6 h-6 rounded-md flex justify-center items-center'>
               <RiTwitterXLine />
             </a>
-            <a href={SocialMediaUrls.LinkedIn} target='_blank' rel="noopener" className='text-sm relative hover:-top-0.5 border-ngc_white border-2 w-6 h-6 rounded-md flex justify-center items-center'>
+            <a href={SocialMediaUrls.LinkedIn || undefined} target='_blank' rel="noopener" className='text-sm relative hover:-top-0.5 border-ngc_white border-2 w-6 h-6 rounded-md flex justify-center items-center'>
               <FaLinkedinIn />
             </a>
-            <a href={SocialMediaUrls.Instagram} target='_blank' rel="noopener" className='text-[1.7rem] relative hover:-top-0.5'>
+            <a href={SocialMediaUrls.Instagram || undefined} target='_blank' rel="noopener" className='text-[1.7rem] relative hover:-top-0.5'>
               <FaInstagram />
             </a>
           </div>

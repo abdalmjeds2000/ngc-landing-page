@@ -19,15 +19,17 @@
   "HeroText": {
     "MainHeader": "بُعد استراتيجي لربط قـارات العالم الثـلاث",
     "SubHeader": "تلبيــة احتياجــات المســتقبل للمملكــة العربية السعودية للحفـاظ علـى الأمـن المائـي والحـد مـن زراعـة الأعـلاف",
-    "Button": "إعرف أكثر"
+    "Button": {
+      "Title": "إعرف أكثر",
+      "Link": "#who-we-are"
+    }
   },
 
   "SocialMediaUrls": {
-    "Twitter": "https://x.com",
-    "Instagram": "https://www.instagram.com",
-    "LinkedIn": "https://www.linkedin.com"
+    "Twitter": null,
+    "Instagram": null,
+    "LinkedIn": "https://www.linkedin.com/company/national-grain-company"
   },
-  "VideoUrl": "https://media.w3.org/2010/05/sintel/trailer_hd.mp4",
   "CarouselCards": [
     {
       "Title": "412",
