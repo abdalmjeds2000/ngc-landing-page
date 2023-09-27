@@ -8,6 +8,7 @@ import { RiTwitterXLine, RiCloseFill } from 'react-icons/ri';
 import { FiMenu } from 'react-icons/fi';
 import { HeaderSection, SocialMediaUrls } from "../content.json";
 import { motion } from "framer-motion";
+import { smoothScrollIntoSection } from '../utils/smoothScrollIntoSection';
 
 
 type OverlayMobileMenuPropsTypes = {
@@ -29,7 +30,15 @@ const OverlayMobileMenu = ({ isOpen, close }: OverlayMobileMenuPropsTypes) => {
         <div className='flex flex-col items-center gap-3 overflow-auto'>
           {
             HeaderSection.MenuItems.map((item, index) => (
-              <a key={index} href={item.Link} onClick={close} className='text-lg font-semibold hover:bg-ngc_brown hover:text-ngc_light_orange px-2 py-1 rounded-md transition-all'>{item.Title}</a>
+              <a 
+                key={index} 
+                onClick={(e) => {
+                  close();
+                  smoothScrollIntoSection(e, item.Link.split('#')[1])
+                }}
+                className='text-lg font-semibold hover:bg-ngc_brown hover:text-ngc_light_orange px-2 py-1 rounded-md cursor-pointer transition-all'>
+                  {item.Title}
+              </a>
             ))
           }
         </div>
@@ -58,7 +67,13 @@ const Header = () => {
           <div className='flex items-center gap-3'>
             {
               HeaderSection.MenuItems.map((item, index) => (
-                <a key={index} href={item.Link} className='text-lg font-semibold hover:bg-ngc_brown hover:text-ngc_light_orange px-2 py-1 rounded-md transition-all'>{item.Title}</a>
+                <a 
+                  key={index} 
+                  onClick={(e) => smoothScrollIntoSection(e, item.Link.split('#')[1])}
+                  rel='noopener noreferrer'
+                  className='text-lg font-semibold hover:bg-ngc_brown hover:text-ngc_light_orange px-2 py-1 rounded-md cursor-pointer transition-all'>
+                    {item.Title}
+                </a>
               ))
             }
           </div>

@@ -4,6 +4,7 @@ import { HeaderSection, SocialMediaUrls } from "../content.json";
 import { FiArrowLeft } from "react-icons/fi";
 import { RiTwitterXLine } from 'react-icons/ri';
 import { FaLinkedinIn, FaInstagram } from 'react-icons/fa';
+import { smoothScrollIntoSection } from '../utils/smoothScrollIntoSection';
 
 const Footer = () => {
   return (
@@ -20,7 +21,9 @@ const Footer = () => {
         <div className='flex-[2] flex justify-center flex-wrap md:flex-col gap-5'>
           {
             HeaderSection.MenuItems.map((item, index) => (
-              <a key={index} href={item.Link} className='group flex gap-1 items-center text-ngc_secondary w-fit text-lg font-semibold hover:bg-ngc_brown hover:text-ngc_light_orange px-2 py-1 rounded-md transition-all'>
+              <a  key={index} 
+                  onClick={(e) => smoothScrollIntoSection(e, item.Link.split('#')[1])}
+                  className='group flex gap-1 items-center cursor-pointer text-ngc_secondary w-fit text-lg font-semibold hover:bg-ngc_brown hover:text-ngc_light_orange px-2 py-1 rounded-md transition-all'>
                 <span>{item.Title}</span> <span className='hidden group-hover:inline-block'><FiArrowLeft /></span>
               </a>
             ))

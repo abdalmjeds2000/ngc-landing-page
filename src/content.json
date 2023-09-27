@@ -3,7 +3,7 @@
     "MenuItems": [
       {
         "Title": "الرئيسية",
-        "Link": "#"
+        "Link": "#hero"
       },{
         "Title": "من نحن",
         "Link": "#who-we-are"

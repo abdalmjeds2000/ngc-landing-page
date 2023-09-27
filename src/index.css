@@ -54,4 +54,5 @@
 
 body {
   font-family: 'Bahij';
+  scroll-behavior: smooth;
 }

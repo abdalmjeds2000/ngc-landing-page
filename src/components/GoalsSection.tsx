@@ -8,7 +8,7 @@ import background_card_image_4 from '../assets/ngc/goal_4.png';
 
 const Card = (props: {title: string, description: string, src: string}) => {
   return (
-    <div className='group relative bg-gradient-to-b from-transparent to-ngc_dark aspect-video rounded-3xl overflow-hidden'>
+    <div className='group relative bg-gradient-to-b from-transparent to-ngc_dark aspect-video rounded-xl lg:rounded-3xl overflow-hidden'>
       <img src={props.src} alt="icon" className='group-hover:scale-110 transition-all w-full h-full absolute top-0 left-0 object-cover' />
       <div className='relative h-full flex flex-col justify-end text-white p-4 lg:p-8'>
         <h3 className='text-2xl lg:text-4xl mb-2 font-bold'>{props.title}</h3>

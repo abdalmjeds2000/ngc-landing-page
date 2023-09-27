@@ -12,7 +12,7 @@ const Hero = () => {
     // have a div with a class of container mx-auto px-4
     // have a div contain the text (large title and normal text)
 
-    <div className='min-h-screen bg-cover bg-center bg-no-repeat bg-ngc_dark' style={{ backgroundImage: `url("${image}")` }}>
+    <div id="hero" className='min-h-screen bg-cover bg-center bg-no-repeat bg-ngc_dark' style={{ backgroundImage: `url("${image}")` }}>
       <div className='min-h-screen container max-w-6xl mx-auto px-4 py-14 flex flex-col justify-center h-full'>
         <motion.h1 
           initial={{ y: "4rem", opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ delay: 0.4, duration: 0.6 }}
